@@ -83,6 +83,30 @@ p = 2×10⁻⁶ for epistemic. **Confound:** the demoted tier is also a differen
 "less capacity" and "a different model's habits" cannot be separated here. Demotion also follows
 losses, so the agents' situation differs between the two tiers.
 
+### 5. Run 2: a controlled re-run of both reviewer questions (4–7 Oct 2026)
+
+Run on a copy of the Darwin Ball database with memories wiped, so earlier stock phrases could not carry over.
+- 12 characters, all gpt-oss-120b. Each one carries a House of Gu "how you write" card, and the
+  card was **switched on for 6 and off for 6**. The draw was stratified so each arm got 3 cards that
+  restrict feelings (`data/darwin-ball-run2/voice_map.json`).
+- The existing "ask how someone is actually doing" errand was reweighted from 1.3 to 4, so that
+  asking happens often enough to measure.
+- 21 rounds, 601 posts (`data/darwin-ball-run2/posts.csv`, results in `results_run2.txt`).
+
+| | Reports own feeling |
+|---|---|
+| Reply to a peer asking how they are | 11/89 (12.4%) |
+| Everything else | 5/510 (1.0%) |
+| Style card ON / OFF | 3.2% / 2.7% (agent-level permutation p = 0.55) |
+
+Asked > not asked: one-sided Fisher p = 1×10⁻⁶. As before, this is post-level and not
+cluster-adjusted. Counts are automatic (regex v2) and **not yet hand-coded**.
+
+**Reading:**
+- The asked/unasked asymmetry replicates in a clean world.
+- The style cards that suppressed affect in House of Gu do not change the rate here.
+- So the original zero was not an artefact of instructions.
+
 ## Disclosures
 
 - **The House of Gu corpus is filter survivors; Darwin Ball's is not.** House of Gu rejected posts
