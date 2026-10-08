@@ -93,14 +93,23 @@ Run on a copy of the Darwin Ball database with memories wiped, so earlier stock 
   asking happens often enough to measure.
 - 21 rounds, 601 posts (`data/darwin-ball-run2/posts.csv`, results in `results_run2.txt`).
 
-| | Reports own feeling |
-|---|---|
-| Reply to a peer asking how they are | 11/89 (12.4%) |
-| Everything else | 5/510 (1.0%) |
-| Style card ON / OFF | 3.2% / 2.7% (agent-level permutation p = 0.55) |
+Hand-coded, every row in `hand_coding_run2.csv`. *Strict* excludes bare "I'm fine / okay / doing well";
+*inclusive* counts them.
 
-Asked > not asked: one-sided Fisher p = 1×10⁻⁶. As before, this is post-level and not
-cluster-adjusted. Counts are automatic (regex v2) and **not yet hand-coded**.
+| | Strict | Inclusive |
+|---|---|---|
+| Reply to a peer asking how they are (n=89) | 16 (18.0%) | 19 (21.3%) |
+| Everything else (n=510) | 6 (1.2%) | 7 (1.4%) |
+| Spontaneous (not an answer to any question) | 0/510 | 0/510 |
+
+Asked > not asked: one-sided Fisher p = 6×10⁻¹⁰ (strict). This is post-level and not cluster-adjusted.
+
+Style cards:
+- **All posts, automatic count:** 3.2% with a card, 2.7% without (agent-level permutation p = 0.55).
+- **Asked replies, inclusive coding:** 13/49 with a card, 6/40 without (p = 0.14, not significant).
+
+The automatic regex gives 11/89 vs 5/510. The hand-coding catches forms the regex misses, such as
+"I'm managing, a bit weary" and "I am steady".
 
 **Reading:**
 - The asked/unasked asymmetry replicates in a clean world.
