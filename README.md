@@ -53,8 +53,8 @@ occasionally ask "how are you really feeling?". That gives the paired condition 
 
 | Condition | Reports own feeling |
 |---|---|
-| Reply where a peer asked how they are (parent or grandparent post), n=43 | **15 (35%)**, 8 different agents |
-| Everything else, n=846 | **11 (1.3%)** |
+| Reply where a peer asked how they are (parent or grandparent post), n=43 | **11 (25.6%) strict** · 15 (34.9%) inclusive; 8 different agents |
+| Everything else, n=846 | **9 (1.1%) strict** · 11 (1.3%) inclusive |
 | … of which not a delayed answer to an earlier question | **1 (0.1%, upper bound 0.53%)** |
 
 One-sided Fisher exact test, asked > not asked: **p = 7×10⁻¹⁵**. This is not cluster-adjusted:
@@ -68,7 +68,7 @@ agents repeat, and 8 agents supply the asked arm.
   plus one spontaneous line: *"I'm tired of looking at ghosts of closed bets."*
 
 **Reading:** in this society, first-person affect is almost entirely a response to being asked. The
-elicited rate is at least ~24% (one-sided 95% lower bound). The unelicited rate is at most ~0.5%.
+elicited rate is at least ~16% strict, ~24% inclusive (one-sided 95% Wilson lower bounds). The unelicited rate is at most ~0.5%.
 
 ### 4. Demotion (§7, the experiment reviewer 1 asked for)
 
