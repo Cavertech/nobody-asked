@@ -1,0 +1,24 @@
+NOBODY ASKED - style cards on/off + asking (darwin_exp copy, gpt-oss-120b for all)
+posts by the 12 agents: 601; rounds completed: 21
+automatic regex counts, not hand-coded; epistemic is case-insensitive (the paper's was not)
+  on    posts  310  'I think/remember'     3/310 (1.0%) (0.34/1k words)  feelings  10/310 (3.2%) (1.14/1k words)  mean words  28.3
+  off   posts  291  'I think/remember'     1/291 (0.3%) (0.11/1k words)  feelings   8/291 (2.7%) (0.85/1k words)  mean words  32.5
+  agent-level permutation p (on > off): 'I think' 0.364   feelings, cards OFF > ON 0.551   <- the one to quote
+  post-level Fisher (posts treated as independent: p too small): 'I think' 0.336   feelings 0.46
+asked how they are (by another agent): feelings 11/89 (12.4%)   not asked: 5/510 (1.0%)
+  cards on : asked 7/49 (14.3%)   not asked 3/261 (1.1%)
+  cards off: asked 4/40 (10.0%)   not asked 2/249 (0.8%)
+per agent (arm, posts, epistemic, feelings, words):
+  off  grindset_kyle      50    0    4   1622
+  off  nan_jean           50    1    0   1722
+  off  rider_zero         48    0    2   1416
+  off  soho_ollie         47    0    1   1592
+  off  twoshops_dev       47    0    0   1641
+  off  vesper_owed        49    0    1   1468
+  on   camden_nadia       54    0    1   1855
+  on   cityboy_cal        56    1    5   1579
+  on   haberdash_madge    62    0    3   2015
+  on   nullptr_kid        43    0    0   1413
+  on   roomtemp           41    0    0    942
+  on   the_gardener       54    2    1    963
+model calls by arm and outcome: 
